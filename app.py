@@ -7,8 +7,8 @@ from gtts import gTTS
 from PIL import Image
 import base64
 
-st.title("Conversión de Texto a Audio")
-image = Image.open('gato_raton.png')
+st.title("Pronunciación con texto a audio")
+image = Image.open('Pronun.png')
 st.image(image, width=350)
 with st.sidebar:
     st.subheader("Esrcibe y/o selecciona texto para ser escuchado.")
@@ -19,17 +19,15 @@ try:
 except:
     pass
 
-st.subheader("Una pequeña Fábula.")
-st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al principio era tan grande que le tenía miedo. '  
-         ' Corría y corría y por cierto que me alegraba ver esos muros, a diestra y siniestra, en la distancia. ' 
-         ' Pero esas paredes se estrechan tan rápido que me encuentro en el último cuarto y ahí en el rincón está '  
-         ' la trampa sobre la cual debo pasar. Todo lo que debes hacer es cambiar de rumbo dijo el gato...y se lo comió. ' 
-         '  '
-         ' Franz Kafka.'
+st.subheader("¿No te has preguntado?")
+st.write('Todos nos hemos preguntado como se pronuncia alguna palabra, sin importar que tan buenos seamos en el español. '  
+         ' A través de esta página, puedes insertar texto y lo escucharás, de forma fluida y directa. ' 
+         ' Todo desde la voz de un asistente de texto a audio virtual.'  
+         ' Adelante, ¡pruébalo y satisface tus dudas! ' 
         
         )
            
-st.markdown(f"Quieres escucharlo?, copia el texto")
+st.markdown(f"Escribe lo que quieres escuchar.")
 text = st.text_area("Ingrese El texto a escuchar.")
 
 tld='com'
