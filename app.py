@@ -11,7 +11,7 @@ st.title("Pronunciación con texto a audio")
 image = Image.open('Pronun.png')
 st.image(image, width=350)
 with st.sidebar:
-    st.subheader("Esrcibe y/o selecciona texto para ser escuchado.")
+    st.subheader("Escribe y/o selecciona texto para ser escuchado.")
 
 
 try:
@@ -20,7 +20,7 @@ except:
     pass
 
 st.subheader("¿No te has preguntado?")
-st.write('Todos nos hemos preguntado como se pronuncia alguna palabra, sin importar que tan buenos seamos en el español. '  
+st.write('Todos nos hemos preguntado como se pronuncia alguna palabra, sin importar que tan buenos seamos en nuestros idiomas. '  
          ' A través de esta página, puedes insertar texto y lo escucharás, de forma fluida y directa. ' 
          ' Todo desde la voz de un asistente de texto a audio virtual.'  
          ' Adelante, ¡pruébalo y satisface tus dudas! ' 
@@ -28,7 +28,7 @@ st.write('Todos nos hemos preguntado como se pronuncia alguna palabra, sin impor
         )
            
 st.markdown(f"Escribe lo que quieres escuchar.")
-text = st.text_area("Ingrese El texto a escuchar.")
+text = st.text_area("Ingresa tu texto.")
 
 tld='com'
 option_lang = st.selectbox(
