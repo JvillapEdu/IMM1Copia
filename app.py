@@ -11,7 +11,7 @@ st.title("Pronunciación con texto a audio")
 image = Image.open('Pronun.png')
 st.image(image, width=350)
 with st.sidebar:
-    st.subheader("Escribe y/o selecciona texto para ser escuchado.")
+    st.subheader("Escribe y/o selecciona texto para escucharlo con text-to-speech.")
 
 
 try:
